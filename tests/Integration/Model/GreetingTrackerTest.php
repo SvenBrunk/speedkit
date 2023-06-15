@@ -7,10 +7,10 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Model;
+namespace OxidEsales\SpeedKit\Tests\Integration\Model;
 
-use OxidEsales\ModuleTemplate\Model\GreetingTracker;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
+use OxidEsales\SpeedKit\Model\GreetingTracker;
+use OxidEsales\SpeedKit\Tests\Integration\IntegrationTestCase;
 
 final class GreetingTrackerTest extends IntegrationTestCase
 {

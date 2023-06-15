@@ -7,9 +7,6 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\SpeedKit\Core;
-
-final class Module
-{
-    public const MODULE_ID = 'oespeedkit';
-}
+$aLang = [
+    'charset'                   => 'UTF-8',
+];

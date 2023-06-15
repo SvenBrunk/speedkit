@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Unit\Service;
+namespace OxidEsales\SpeedKit\Tests\Unit\Service;
 
 use OxidEsales\Eshop\Core\Request as CoreRequest;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Service\GreetingMessage;
-use OxidEsales\ModuleTemplate\Service\ModuleSettings;
+use OxidEsales\SpeedKit\Core\Module as ModuleCore;
+use OxidEsales\SpeedKit\Service\GreetingMessage;
+use OxidEsales\SpeedKit\Service\ModuleSettings;
 use PHPUnit\Framework\TestCase;
 
 final class GreetingMessageTest extends TestCase

@@ -1,4 +1,4 @@
 table_storage:
-  table_name: oxmigrations_oe_moduletemplate
+  table_name: oxmigrations_oe_speedkit
 migrations_paths:
-  'OxidEsales\ModuleTemplate\Migrations': data
+  'OxidEsales\SpeedKit\Migrations': data

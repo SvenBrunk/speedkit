@@ -15,78 +15,45 @@ $sMetadataVersion = '2.1';
  */
 $aModule = [
     'id'          => 'oespeedkit',
-    'title'       => 'OxidEsales Module Speedkit',
+    'title'       => 'OxidEsales Module Speed Kit',
     'description' => 'Implements an interface to Speed Kit',
     'thumbnail'   => 'pictures/logo.png',
     'version'     => '0.1.0',
     'author'      => 'OXID eSales AG',
     'url'         => 'https://www.speedkit.com/',
     'email'       => 'info@oxid-esales.com',
-    'extend'      => [
-        \OxidEsales\Eshop\Application\Model\User::class => \OxidEsales\ModuleTemplate\Model\User::class,
-        \OxidEsales\Eshop\Application\Controller\StartController::class => \OxidEsales\ModuleTemplate\Controller\StartController::class
-    ],
-    'controllers' => [
-        'oemtgreeting' => \OxidEsales\ModuleTemplate\Controller\GreetingController::class
-    ],
-    'templates'   => [
-        '@oe_moduletemplate/templates/greetingtemplate.tpl' => 'views/smarty/templates/greetingtemplate.tpl',
-    ],
+    'extend'      => [ ],
+    'controllers' => [ ],
+    'templates'   => [ ],
     'events' => [
-        'onActivate' => '\OxidEsales\ModuleTemplate\Core\ModuleEvents::onActivate',
-        'onDeactivate' => '\OxidEsales\ModuleTemplate\Core\ModuleEvents::onDeactivate'
+        'onActivate' => '\OxidEsales\SpeedKit\Core\ModuleEvents::onActivate',
+        'onDeactivate' => '\OxidEsales\SpeedKit\Core\ModuleEvents::onDeactivate'
     ],
-    'blocks'      => [
-        [
-            //It is possible to replace blocks by theme, to do so add 'theme' => '<theme_name>' key/value in here
-            'template' => 'page/shop/start.tpl',
-            'block' => 'start_welcome_text',
-            'file' => 'views/smarty/blocks/oemt_start_welcome_text.tpl'
-        ]
-    ],
+    'blocks'      => [ ],
     'settings' => [
         /** Main */
         [
-            'group'       => 'oemoduletemplate_main',
-            'name'        => 'oemoduletemplate_GreetingMode',
-            'type'        => 'select',
-            'constraints' => 'generic|personal',
-            'value'       => 'generic'
-        ],
-        [
-            'group' => 'oemoduletemplate_main',
-            'name'  => 'oemoduletemplate_BrandName',
+            'group' => 'oespeedkit_main',
+            'name'  => 'oespeedkit_ScriptURL',
             'type'  => 'str',
-            'value' => 'Testshop'
+            'value' => 'https://example.app.baqend.com/v1/speedkit/install.js?d=production'
         ],
         [
-            'group' => 'oemoduletemplate_main',
-            'name'  => 'oemoduletemplate_LoggerEnabled',
+            'group' => 'oespeedkit_main',
+            'name'  => 'oespeedkit_LoggerEnabled',
             'type'  => 'bool',
             'value' => false
         ],
         [
-            'group' => 'oemoduletemplate_main',
-            'name'  => 'oemoduletemplate_Timeout',
+            'group' => 'oespeedkit_main',
+            'name'  => 'oespeedkit_Timeout',
             'type'  => 'num',
             'value' => 30
             //'value' => 30.5
         ],
         [
-            'group' => 'oemoduletemplate_main',
-            'name'  => 'oemoduletemplate_Categories',
-            'type'  => 'arr',
-            'value' => ['Sales', 'Manufacturers']
-        ],
-        [
-            'group' => 'oemoduletemplate_main',
-            'name'  => 'oemoduletemplate_Channels',
-            'type'  => 'aarr',
-            'value' => ['1' => 'de', '2' => 'en']
-        ],
-        [
-            'group'    => 'oemoduletemplate_main',
-            'name'     => 'oemoduletemplate_Password',
+            'group'    => 'oespeedkit_main',
+            'name'     => 'oespeedkit_Password',
             'type'     => 'password',
             'value'    => 'changeMe',
             'position' => 3

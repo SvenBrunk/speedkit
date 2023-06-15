@@ -7,17 +7,17 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Controller;
+namespace OxidEsales\SpeedKit\Tests\Integration\Controller;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
-use OxidEsales\ModuleTemplate\Controller\GreetingController;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Model\GreetingTracker;
-use OxidEsales\ModuleTemplate\Model\User as ModuleUser;
-use OxidEsales\ModuleTemplate\Service\ModuleSettings;
-use OxidEsales\ModuleTemplate\Service\Repository;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Traits\ServiceContainer;
+use OxidEsales\SpeedKit\Controller\GreetingController;
+use OxidEsales\SpeedKit\Core\Module as ModuleCore;
+use OxidEsales\SpeedKit\Model\GreetingTracker;
+use OxidEsales\SpeedKit\Model\User as ModuleUser;
+use OxidEsales\SpeedKit\Service\ModuleSettings;
+use OxidEsales\SpeedKit\Service\Repository;
+use OxidEsales\SpeedKit\Tests\Integration\IntegrationTestCase;
+use OxidEsales\SpeedKit\Traits\ServiceContainer;
 
 /*
  * We want to test controller behavior going 'full way'.

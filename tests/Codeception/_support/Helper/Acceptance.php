@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Codeception\Helper;
+namespace OxidEsales\SpeedKit\Tests\Codeception\Helper;
 
 use OxidEsales\Facts\Facts;
 

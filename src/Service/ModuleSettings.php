@@ -7,10 +7,10 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Service;
+namespace OxidEsales\SpeedKit\Service;
 
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
-use OxidEsales\ModuleTemplate\Core\Module;
+use OxidEsales\SpeedKit\Core\Module;
 
 /**
  * @extendable-class

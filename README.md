@@ -75,7 +75,7 @@ First, lets decide on terms:
     found [here](https://docs.oxid-esales.com/developer/en/6.4/development/modules_components_themes/module/skeleton/metadataphp/amodule/id.html).
 * Module is installable to `vendor/<yourPackageName>` directory. The package name looks like: `<yourVendorName>/<yourModuleName>`, example: `oxid-esales/module-template`. Decide 
   what will be your new module package name.
-* Decide on your module's namespace - `<YourVendorName>\<YourModuleName>`, example: `OxidEsales\ModuleTemplate`.
+* Decide on your module's namespace - `<YourVendorName>\<YourModuleName>`, example: `OxidEsales\SpeedKit`.
 * In the following examples, your information required places will be shown as placeholders: `<yourPackageName>`, it means
   you should put your package name at that place, without brackets, for example:
   ```
@@ -201,8 +201,8 @@ Story:
 ### Extend shop functionality
 
 #### Sometimes we just need to extend what the shop is already offering us:
-* extending a shop model (`OxidEsales\ModuleTemplate\Model\User`)
-* extending a shop controller (`OxidEsales\ModuleTemplate\Controller\StartController`)
+* extending a shop model (`OxidEsales\SpeedKit\Model\User`)
+* extending a shop controller (`OxidEsales\SpeedKit\Controller\StartController`)
 * extending a shop database table (`oxuser`)
 * extending a shop template block (`start_welcome_text`)
 
@@ -218,8 +218,8 @@ If you need to extend the shop class chain by overwriting, try to stick to the p
 #### Sometimes we need to bring our own
 * own module controller (`oemtgreeting` with own template and own translations)
 * module setting (`oemoduletemplate_GreetingMode`)
-* event subscriber (`OxidEsales\ModuleTemplate\Subscriber\BeforeModelUpdate`)
-* model with a database (`OxidEsales\ModuleTemplate\Model\GreetingTracker`)
+* event subscriber (`OxidEsales\SpeedKit\Subscriber\BeforeModelUpdate`)
+* model with a database (`OxidEsales\SpeedKit\Model\GreetingTracker`)
 * DI service examples
 
 #### Whatever you do, ensure it is covered with tests
@@ -273,8 +273,8 @@ namespace needs to point there. In our case this looks like
 ```bash
    "autoload": {
         "psr-4": {
-            "OxidEsales\\ModuleTemplate\\": "src/",
-            "OxidEsales\\ModuleTemplate\\Tests\\": "tests/"
+            "OxidEsales\\SpeedKit\\": "src/",
+            "OxidEsales\\SpeedKit\\Tests\\": "tests/"
         }
     },
 ```

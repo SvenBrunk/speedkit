@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Traits;
+namespace OxidEsales\SpeedKit\Traits;
 
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 

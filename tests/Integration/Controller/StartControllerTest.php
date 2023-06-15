@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Controller;
+namespace OxidEsales\SpeedKit\Tests\Integration\Controller;
 
 use OxidEsales\Eshop\Application\Controller\StartController as EshopStartController;
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Registry as EshopRegistry;
-use OxidEsales\ModuleTemplate\Service\ModuleSettings;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Traits\ServiceContainer;
+use OxidEsales\SpeedKit\Service\ModuleSettings;
+use OxidEsales\SpeedKit\Tests\Integration\IntegrationTestCase;
+use OxidEsales\SpeedKit\Traits\ServiceContainer;
 
 /*
  * Here we have full integration test cases for a what we call 'chain extended' shop class.

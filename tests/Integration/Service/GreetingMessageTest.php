@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Service;
+namespace OxidEsales\SpeedKit\Tests\Integration\Service;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Request as CoreRequest;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Service\GreetingMessage;
-use OxidEsales\ModuleTemplate\Service\ModuleSettings;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
+use OxidEsales\SpeedKit\Core\Module as ModuleCore;
+use OxidEsales\SpeedKit\Service\GreetingMessage;
+use OxidEsales\SpeedKit\Service\ModuleSettings;
+use OxidEsales\SpeedKit\Tests\Integration\IntegrationTestCase;
 
 final class GreetingMessageTest extends IntegrationTestCase
 {

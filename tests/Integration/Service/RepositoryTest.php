@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Service;
+namespace OxidEsales\SpeedKit\Tests\Integration\Service;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
-use OxidEsales\ModuleTemplate\Model\GreetingTracker;
-use OxidEsales\ModuleTemplate\Service\Repository;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Traits\ServiceContainer;
+use OxidEsales\SpeedKit\Model\GreetingTracker;
+use OxidEsales\SpeedKit\Service\Repository;
+use OxidEsales\SpeedKit\Tests\Integration\IntegrationTestCase;
+use OxidEsales\SpeedKit\Traits\ServiceContainer;
 
 final class RepositoryTest extends IntegrationTestCase
 {

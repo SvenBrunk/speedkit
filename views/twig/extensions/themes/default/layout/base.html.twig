@@ -1,0 +1,8 @@
+{% extends "layout/base.html.twig" %}
+
+{% block base_js %}
+
+{{ parent() }}
+<script src="https://example.app.baqend.com/v1/speedkit/install.js?d=production" async crossorigin="anonymous"></script>
+
+{% endblock %}

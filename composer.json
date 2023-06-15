@@ -29,8 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "OxidEsales\\Speedkit\\": "src/",
-            "OxidEsales\\Speedkit\\Tests\\": "tests/"
+            "OxidEsales\\SpeedKit\\": "./src",
+            "OxidEsales\\SpeedKit\\Tests\\": "./tests"
         }
     },
     "scripts": {

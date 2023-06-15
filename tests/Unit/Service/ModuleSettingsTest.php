@@ -10,8 +10,8 @@ declare(strict_types=1);
 namespace OxidEsales\EshopCommunity\modules\oe\moduletemplate\tests\Unit\Service;
 
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingService;
-use OxidEsales\ModuleTemplate\Core\Module;
-use OxidEsales\ModuleTemplate\Service\ModuleSettings;
+use OxidEsales\SpeedKit\Core\Module;
+use OxidEsales\SpeedKit\Service\ModuleSettings;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\String\UnicodeString;
 
