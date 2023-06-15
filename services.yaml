@@ -6,14 +6,6 @@ services:
     bind:
       OxidEsales\Eshop\Core\Request: '@=service("OxidEsales\\SpeedKit\\Core\\Registry").getRequest()'
 
-  OxidEsales\SpeedKit\Core\Registry:
-    class: OxidEsales\Eshop\Core\Registry
-    public: true
-
   OxidEsales\SpeedKit\Service\:
     resource: 'src/Service/*'
     public: true
-
-  OxidEsales\SpeedKit\Subscriber\BeforeModelUpdate:
-    class: OxidEsales\SpeedKit\Subscriber\BeforeModelUpdate
-    tags: [ 'kernel.event_subscriber' ]
