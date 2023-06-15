@@ -14,14 +14,14 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id'          => 'oe_moduletemplate',
-    'title'       => 'OxidEsales Module Template (OEMT)',
-    'description' =>  '',
+    'id'          => 'oespeedkit',
+    'title'       => 'OxidEsales Module Speedkit',
+    'description' => 'Implements an interface to Speed Kit',
     'thumbnail'   => 'pictures/logo.png',
-    'version'     => '2.0.0',
+    'version'     => '0.1.0',
     'author'      => 'OXID eSales AG',
-    'url'         => '',
-    'email'       => '',
+    'url'         => 'https://www.speedkit.com/',
+    'email'       => 'info@oxid-esales.com',
     'extend'      => [
         \OxidEsales\Eshop\Application\Model\User::class => \OxidEsales\ModuleTemplate\Model\User::class,
         \OxidEsales\Eshop\Application\Controller\StartController::class => \OxidEsales\ModuleTemplate\Controller\StartController::class

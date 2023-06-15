@@ -1,5 +1,5 @@
 {
-    "name": "oxid-esales/module-template",
+    "name": "oxid-esales/speedkit",
     "description": "",
     "type": "oxideshop-module",
     "keywords": [
@@ -29,8 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "OxidEsales\\ModuleTemplate\\": "src/",
-            "OxidEsales\\ModuleTemplate\\Tests\\": "tests/"
+            "OxidEsales\\Speedkit\\": "src/",
+            "OxidEsales\\Speedkit\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -54,7 +54,7 @@
         "tests-integration": "XDEBUG_MODE=coverage vendor/bin/phpunit --bootstrap=/var/www/source/bootstrap.php --config=tests/ --testsuite=Integration",
         "tests-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --bootstrap=/var/www/source/bootstrap.php --config=tests/ --coverage-html=tests/result/coverage",
 
-        "tests-codeception": "(cd /var/www/ && THEME_ID=apex MODULE_IDS=oe_moduletemplate /var/www/vendor/bin/codecept run acceptance -c /var/www/vendor/oxid-esales/module-template/tests/codeception.yml -g oe_moduletemplate)",
+        "tests-codeception": "(cd /var/www/ && THEME_ID=apex MODULE_IDS=oespeedkit /var/www/vendor/bin/codecept run acceptance -c /var/www/vendor/oxid-esales/speedkit/tests/codeception.yml -g oespeedkit)",
 
         "tests-all": [
             "@tests-unit",
