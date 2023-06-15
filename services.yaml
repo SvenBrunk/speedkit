@@ -3,8 +3,6 @@ services:
   _defaults:
     public: false
     autowire: true
-    bind:
-      OxidEsales\Eshop\Core\Request: '@=service("OxidEsales\\SpeedKit\\Core\\Registry").getRequest()'
 
   OxidEsales\SpeedKit\Service\:
     resource: 'src/Service/*'
