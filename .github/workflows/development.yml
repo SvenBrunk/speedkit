@@ -11,7 +11,7 @@ on:
         type: string
       template_engine:
         type: string
-        default: 'both'
+        default: 'twig'
       module_codecept_test_group:
         type: string
         default: 'oe_moduletemplate'
